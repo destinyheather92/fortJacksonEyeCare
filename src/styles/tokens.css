@@ -1,0 +1,77 @@
+/* ─────────────────────────────────────────────────────────────
+   Design tokens — Fort Jackson Eye Care
+   Evergreen + warm paper + rust accent: calm and trustworthy
+   without the blue-and-white hospital look.
+   ───────────────────────────────────────────────────────────── */
+:root {
+  /* Surfaces */
+  --paper: #faf7f1;
+  --surface: #ffffff;
+  --tint: #f2ede3;
+  --sage: #e4ebe5;
+
+  /* Text */
+  --ink: #1c2725;
+  --ink-soft: #465451;
+  --line: #dcd5c8;
+  --line-strong: #c3baa9;
+
+  /* Brand */
+  --green-900: #12302a;
+  --green-800: #173d37;
+  --green-700: #1f4e46;
+  --green-600: #2a6358;
+  --green-100: #dce8e2;
+
+  --rust-600: #b04f28; /* primary CTA — 5.2:1 with white */
+  --rust-700: #923f1e;
+
+  --brass: #d4a24c; /* decorative rules & accents on dark */
+  --brass-soft: #f5e7c8;
+  --brass-ink: #6a4a12;
+
+  --cream: #f4efe4; /* text on dark green */
+  --cream-soft: #c9d6d0;
+
+  /* Focus */
+  --focus: var(--rust-600);
+  --focus-on-dark: #f0c46a;
+
+  /* Type */
+  --font-display: 'Fraunces Variable', Georgia, 'Times New Roman', serif;
+  --font-body: 'Source Sans 3 Variable', 'Source Sans Pro', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --text-sm: 0.9375rem;
+  --text-base: 1.0625rem;
+  --text-md: 1.1875rem;
+  --text-lg: clamp(1.1875rem, 1.05rem + 0.5vw, 1.375rem);
+  --h1: clamp(2.3rem, 1.6rem + 3vw, 3.75rem);
+  --h2: clamp(1.75rem, 1.35rem + 1.7vw, 2.5rem);
+  --h3: 1.25rem;
+
+  /* Space & shape */
+  --gutter: 1rem;
+  --section-y: clamp(3.25rem, 2rem + 5vw, 5.5rem);
+  --radius: 6px;
+  --radius-lg: 10px;
+  --header-h: 4.5rem;
+
+  --shadow-sm: 0 1px 2px rgb(18 48 42 / 0.06), 0 1px 1px rgb(18 48 42 / 0.04);
+  --shadow-md: 0 10px 24px -12px rgb(18 48 42 / 0.25), 0 2px 6px rgb(18 48 42 / 0.06);
+
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+@media (min-width: 40em) {
+  :root {
+    --gutter: 1.5rem;
+    --text-base: 1.125rem;
+  }
+}
+
+@media (min-width: 64em) {
+  :root {
+    --gutter: 2rem;
+    --header-h: 5rem;
+  }
+}

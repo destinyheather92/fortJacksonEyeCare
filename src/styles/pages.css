@@ -1,0 +1,805 @@
+/* ═══════════════════════ Home ═══════════════════════ */
+.hero {
+  padding-block: clamp(2.5rem, 1.5rem + 4vw, 5rem) clamp(1.5rem, 0.5rem + 3vw, 3rem);
+  background:
+    radial-gradient(ellipse 60% 70% at 100% 0%, rgb(220 232 226 / 0.9), transparent 70%),
+    var(--paper);
+}
+
+.hero__inner {
+  display: grid;
+  gap: 2.75rem;
+  align-items: center;
+}
+
+.hero__title {
+  font-size: clamp(2.6rem, 1.7rem + 4vw, 4.4rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.hero__title em {
+  font-style: italic;
+  font-weight: 500;
+  color: var(--rust-600);
+}
+
+.hero__lead {
+  margin-block: 1.35rem 2rem;
+  max-width: 34rem;
+  font-size: var(--text-lg);
+  color: var(--ink-soft);
+}
+
+.hero__points {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--green-800);
+}
+
+.hero__points li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.hero__points .icon {
+  color: var(--rust-600);
+}
+
+.hero__media {
+  position: relative;
+  margin-right: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.hero__image {
+  position: relative;
+  z-index: 1;
+  box-shadow: var(--shadow-md);
+}
+
+.hero__image.image-slot--placeholder {
+  background-color: #eef2ee;
+}
+
+.hero__frame {
+  position: absolute;
+  inset: 0.75rem -0.75rem -0.75rem 0.75rem;
+  border-radius: var(--radius-lg);
+  background: var(--green-700);
+}
+
+@media (min-width: 56em) {
+  .hero__inner {
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 4rem;
+  }
+  .hero__media {
+    margin-right: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  .hero__frame {
+    inset: 1.25rem -1.25rem -1.25rem 1.25rem;
+  }
+}
+
+.welcome {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.welcome__body {
+  font-size: var(--text-md);
+}
+
+@media (min-width: 56em) {
+  .welcome {
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 4rem;
+  }
+}
+
+/* Patients we serve: same text + list pattern as the eye-health teaser */
+.patients {
+  display: grid;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.patients__lead {
+  margin-block: 1rem 1.5rem;
+  max-width: 36rem;
+  font-size: var(--text-md);
+}
+
+.patients__insurance {
+  max-width: 36rem;
+  background: var(--surface);
+}
+
+.patients__list {
+  list-style: none;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.patients__list li {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 1rem 1.15rem;
+  background: var(--surface);
+  border: 1px solid rgb(31 78 70 / 0.15);
+  border-radius: var(--radius);
+  font-weight: 600;
+  color: var(--green-800);
+}
+
+.patients__list .icon {
+  flex-shrink: 0;
+  color: var(--rust-600);
+}
+
+@media (min-width: 56em) {
+  .patients {
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 4rem;
+  }
+}
+
+.provider-preview {
+  display: grid;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.provider-preview__media {
+  max-width: 26rem;
+}
+
+.provider-preview__photo {
+  box-shadow: 1rem 1rem 0 var(--sage);
+}
+
+.provider-preview__role {
+  margin-block: 0.4rem 1.25rem;
+  font-weight: 650;
+  color: var(--rust-600);
+}
+
+.provider-preview__text .btn {
+  margin-top: 1.75rem;
+}
+
+@media (min-width: 56em) {
+  .provider-preview {
+    grid-template-columns: minmax(18rem, 0.8fr) 1.2fr;
+    gap: 4.5rem;
+  }
+}
+
+.eyehealth-teaser {
+  display: grid;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.eyehealth-teaser__text > p {
+  margin-block: 1rem 1.5rem;
+  max-width: 36rem;
+  font-size: var(--text-md);
+}
+
+.habit-list {
+  list-style: none;
+  display: grid;
+  gap: 0.6rem;
+  counter-reset: habit;
+}
+
+.habit-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.9rem 1.1rem;
+  background: var(--surface);
+  border: 1px solid rgb(31 78 70 / 0.15);
+  border-radius: var(--radius);
+  font-weight: 600;
+  color: var(--green-800);
+}
+
+.habit-list .icon {
+  color: var(--green-600);
+}
+
+@media (min-width: 56em) {
+  .eyehealth-teaser {
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 4rem;
+  }
+}
+
+.location {
+  display: grid;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.location__info {
+  display: grid;
+  gap: 1.75rem;
+  align-content: start;
+}
+
+.location__info .section-heading {
+  margin-bottom: 0;
+}
+
+@media (min-width: 56em) {
+  .location {
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 4rem;
+  }
+}
+
+/* ═══════════════════════ About ═══════════════════════ */
+.split {
+  display: grid;
+  gap: 3rem;
+}
+
+.split__aside {
+  display: grid;
+  gap: 1.5rem;
+  align-content: start;
+}
+
+.aside-card {
+  display: grid;
+  gap: 0.85rem;
+  padding: 1.75rem;
+  background: var(--sage);
+  border-radius: var(--radius-lg);
+}
+
+.aside-card__title {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 60em) {
+  .split {
+    grid-template-columns: 1.4fr 1fr;
+    gap: 4.5rem;
+  }
+  .split__aside {
+    position: sticky;
+    top: calc(var(--header-h) + 2rem);
+  }
+}
+
+.lifespan {
+  display: grid;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.lifespan .prose {
+  font-size: var(--text-md);
+}
+
+@media (min-width: 56em) {
+  .lifespan {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}
+
+/* ═══════════════════════ Services ═══════════════════════ */
+.services-layout__inner {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.services-toc {
+  padding: 1.25rem 1.35rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+}
+
+.services-toc__heading {
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-bottom: 0.75rem;
+}
+
+.services-toc ul {
+  list-style: none;
+  display: grid;
+  gap: 0.15rem;
+}
+
+.services-toc a {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.45rem 0.5rem;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  line-height: 1.3;
+}
+
+.services-toc a:hover {
+  background: var(--green-100);
+}
+
+.services-toc .icon {
+  color: var(--green-600);
+}
+
+@media (min-width: 40em) and (max-width: 63.99em) {
+  .services-toc ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 64em) {
+  .services-layout__inner {
+    grid-template-columns: 17rem 1fr;
+    gap: 4rem;
+    align-items: start;
+  }
+  .services-toc {
+    position: sticky;
+    top: calc(var(--header-h) + 1.5rem);
+  }
+}
+
+.services-layout {
+  padding-top: clamp(2.5rem, 1.5rem + 3vw, 4rem);
+}
+
+.service-detail {
+  padding-block: 2.25rem;
+  border-top: 1px solid var(--line);
+  scroll-margin-top: calc(var(--header-h) + 1rem);
+}
+
+.service-detail:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.service-detail__head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.service-detail__icon {
+  display: inline-grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: var(--radius);
+  background: var(--green-700);
+  color: var(--cream);
+}
+
+.service-detail__title {
+  font-size: clamp(1.5rem, 1.25rem + 1vw, 2rem);
+}
+
+.service-detail__summary {
+  font-size: var(--text-md);
+  font-weight: 600;
+  color: var(--green-800);
+}
+
+.service-detail__body {
+  display: grid;
+  gap: 1.75rem;
+}
+
+@media (min-width: 48em) {
+  .service-detail__body--media {
+    grid-template-columns: 1.35fr 1fr;
+    gap: 2.5rem;
+    align-items: start;
+  }
+}
+
+.inline-cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem 1.5rem;
+  margin-block: 0.5rem 2.25rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--sage);
+  border-radius: var(--radius-lg);
+  border-left: 4px solid var(--rust-600);
+}
+
+.inline-cta__text {
+  max-width: 32rem;
+}
+
+/* ═══════════════════════ Meet the Team ═══════════════════════ */
+.provider__inner {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.provider__media {
+  display: grid;
+  gap: 1.5rem;
+  align-content: start;
+  max-width: 28rem;
+}
+
+.provider__photo {
+  box-shadow: var(--shadow-md);
+}
+
+.provider__facts {
+  display: grid;
+  gap: 0.9rem;
+  margin: 0;
+}
+
+.provider__fact {
+  padding-left: 1rem;
+  border-left: 3px solid var(--brass);
+}
+
+.provider__fact dt {
+  font-weight: 700;
+  color: var(--green-800);
+}
+
+.provider__fact dd {
+  margin: 0.1rem 0 0;
+  font-size: 1rem;
+  color: var(--ink-soft);
+}
+
+.provider__name {
+  font-size: var(--h1);
+  margin-bottom: 1.5rem;
+}
+
+.provider__lead {
+  font-size: var(--text-lg);
+  color: var(--green-800);
+}
+
+.provider__bio .schedule-cta {
+  margin-top: 2rem;
+}
+
+@media (min-width: 56em) {
+  .provider__inner {
+    grid-template-columns: minmax(17rem, 24rem) 1fr;
+    gap: 4.5rem;
+    align-items: start;
+  }
+  .provider__media {
+    position: sticky;
+    top: calc(var(--header-h) + 2rem);
+  }
+}
+
+/* ═══════════════════════ Eye Health ═══════════════════════ */
+.topic-list {
+  list-style: none;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.topic {
+  display: grid;
+  gap: 1.25rem;
+  padding: 1.75rem 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  scroll-margin-top: calc(var(--header-h) + 1rem);
+}
+
+.topic--b {
+  background: var(--tint);
+}
+
+.topic__marker {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.topic__num {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--brass);
+  font-variant-numeric: lining-nums;
+}
+
+.topic__icon {
+  display: inline-grid;
+  place-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background: var(--green-100);
+  color: var(--green-700);
+}
+
+.topic__content {
+  display: grid;
+  gap: 1.1rem;
+  justify-items: start;
+}
+
+.topic__title {
+  font-size: clamp(1.5rem, 1.25rem + 1vw, 2rem);
+}
+
+.topic__tips {
+  width: 100%;
+  max-width: 40rem;
+}
+
+.topic__tips-label {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  color: var(--green-800);
+}
+
+@media (min-width: 48em) {
+  .topic {
+    grid-template-columns: 6.5rem 1fr;
+    gap: 2rem;
+    padding: 2.25rem 2.5rem;
+  }
+  .topic__marker {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.rule-202020 {
+  width: 100%;
+  max-width: 44rem;
+  padding: 1.35rem;
+  background: var(--green-700);
+  border-radius: var(--radius-lg);
+  color: var(--cream);
+}
+
+.rule-202020__title {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.8125rem;
+  color: var(--brass);
+}
+
+.rule-202020__steps {
+  list-style: none;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.rule-202020__steps li {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.rule-202020__num {
+  font-family: var(--font-display);
+  font-size: 2.75rem;
+  font-weight: 500;
+  line-height: 1;
+  color: #fff;
+}
+
+.rule-202020__label {
+  font-size: 1.0625rem;
+  line-height: 1.35;
+}
+
+.rule-202020__label strong {
+  color: #fff;
+}
+
+@media (min-width: 40em) {
+  .rule-202020__steps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .rule-202020__steps li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+    padding-left: 1rem;
+    border-left: 1px solid rgb(244 239 228 / 0.25);
+  }
+}
+
+.uv-callout {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  max-width: 34rem;
+  padding: 1.1rem 1.35rem;
+  background: var(--brass-soft);
+  border-radius: var(--radius-lg);
+  color: #3f2d0c;
+}
+
+.uv-callout__figure {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--brass-ink);
+}
+
+.uv-callout__figure span {
+  font-size: 1.5rem;
+}
+
+.eye-health-disclaimer {
+  margin-top: 2rem;
+  max-width: 52rem;
+}
+
+/* ═══════════════════════ Contact ═══════════════════════ */
+.contact-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 56em) {
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+.schedule-panel {
+  display: grid;
+  gap: 1.1rem;
+  align-content: start;
+  justify-items: start;
+  padding: clamp(1.75rem, 1rem + 3vw, 2.75rem);
+  background: var(--green-700);
+  color: var(--cream-soft);
+  border-radius: var(--radius-lg);
+}
+
+.schedule-panel__icon {
+  display: inline-grid;
+  place-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: var(--radius);
+  background: rgb(244 239 228 / 0.12);
+  color: var(--brass);
+}
+
+.schedule-panel__title {
+  font-size: var(--h2);
+  color: #fff;
+}
+
+.schedule-panel__note {
+  display: flex;
+  gap: 0.5rem;
+  font-size: var(--text-sm);
+}
+
+.schedule-panel__note .icon {
+  margin-top: 0.25rem;
+  color: var(--brass);
+}
+
+.contact-info {
+  padding: clamp(1.75rem, 1rem + 3vw, 2.75rem);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+}
+
+.contact-info__title {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-message {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 50rem;
+}
+
+.contact-message__fallback {
+  display: grid;
+  gap: 1.25rem;
+  font-size: var(--text-md);
+}
+
+.contact-message__emergency {
+  display: flex;
+  gap: 0.5rem;
+  font-size: var(--text-sm);
+  color: var(--ink-soft);
+}
+
+.contact-message__emergency .icon {
+  margin-top: 0.2rem;
+}
+
+/* ═══════════════════════ 404 ═══════════════════════ */
+.not-found__inner {
+  display: grid;
+  justify-items: start;
+  gap: 1.25rem;
+  max-width: 48rem;
+}
+
+.not-found__chart {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: clamp(3.5rem, 2rem + 6vw, 6rem);
+  letter-spacing: 0.3em;
+  line-height: 1;
+  color: var(--green-100);
+  -webkit-text-stroke: 1.5px var(--green-600);
+}
+
+.not-found__links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.75rem;
+  margin-block: 0.5rem 1rem;
+}
+
+.wayfinding {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 0;
+}
+
+.wayfinding__step {
+  margin: 0;
+  display: grid;
+  gap: 0.6rem;
+  align-content: start;
+}
+
+.wayfinding__step figcaption {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--ink-soft);
+}
