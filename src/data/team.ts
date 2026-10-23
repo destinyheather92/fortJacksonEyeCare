@@ -34,14 +34,14 @@ export const leadProvider: TeamMember = {
   role: 'Primary Eye Care Provider',
   photo: 'drHardison',
   intro:
-    'Raised and educated in South Carolina, Dr. Hardison brings a background in military healthcare and public health to Fort Jackson Eye Care, along with a deep commitment to making quality eye care accessible and affordable.',
+    'Raised and educated in South Carolina, Dr. Hardison brings a background in military healthcare and public health to Fort Jackson Eye Center, along with a deep commitment to making quality eye care accessible and affordable.',
   bio: [
-    'Dr. Andrew Hardison opened Fort Jackson Eye Care in 2025 after living in Virginia. He was raised and educated in South Carolina, where he attended the South Carolina Governor’s School and graduated from The Citadel with honors.',
+    'Dr. Andrew Hardison opened Fort Jackson Eye Center in 2025 after living in Virginia. He was raised and educated in South Carolina, where he attended the South Carolina Governor’s School and graduated from The Citadel with honors.',
     'After graduation, he worked in textile mills in several communities throughout the Upstate. Those experiences helped lead him back to school to pursue a professional healthcare degree and a career where he could help others as a primary eye care provider.',
     'Dr. Hardison studied in Tennessee and Pennsylvania as a recipient of the Health Professions Scholarship Program. He later commissioned into the United States Navy and was stationed in Little Creek, Norfolk, and at Naval Medical Center Portsmouth in Virginia.',
     'In 2014, Dr. Hardison earned a master’s degree in Public Health with a concentration in ocular healthcare.',
     'While living in Virginia, he worked and volunteered with nonprofit organizations including the National Alliance on Mental Illness (NAMI), CrossOver Healthcare Ministry, and Remote Area Medical (RAM).',
-    'Today, Dr. Hardison provides comprehensive eye care at Fort Jackson Eye Care for patients ranging from infants to senior adults. His services include wellness examinations, DMV examinations, contact lens care, glaucoma and retinal disease evaluation and management, and hypertensive and diabetic eye examinations.',
+    'Today, Dr. Hardison provides comprehensive eye care at Fort Jackson Eye Center for patients ranging from infants to senior adults. His services include wellness examinations, DMV examinations, contact lens care, glaucoma and retinal disease evaluation and management, and hypertensive and diabetic eye examinations.',
     'Dr. Hardison is passionate about helping individuals access quality, affordable eye care.',
   ],
 };
@@ -67,11 +67,11 @@ export const teamMembers: TeamMember[] = [
     role: 'Office Manager',
     photo: 'kashiaDoyle',
     intro:
-      'Hi, I’m Kashia Doyle, and I’m the Office Manager at Fort Jackson Eye Care. I’m proud to be part of a practice that serves our military community and their families.',
+      'Hi, I’m Kashia Doyle, and I’m the Office Manager at Fort Jackson Eye Center. I’m proud to be part of a practice that serves our military community and their families.',
     bio: [
       'I come from a family with a strong military background, so serving and supporting the military community has always been something that feels very familiar and meaningful to me. I was born in Florence, SC, but raised in Lawton, OK, where I learned the importance of family, hard work, treating people with kindness, and always being there for others.',
       'In my role, I enjoy making sure our office runs smoothly while helping our patients and team feel welcomed, respected, and cared for. I’m someone who genuinely enjoys connecting with people, learning new things, and being able to help wherever I’m needed.',
-      'I’m grateful to be part of the Fort Jackson Eye Care family and look forward to welcoming you to our office!',
+      'I’m grateful to be part of the Fort Jackson Eye Center family and look forward to welcoming you to our office!',
     ],
   },
   {

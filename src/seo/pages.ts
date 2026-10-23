@@ -9,7 +9,7 @@ export interface PageMeta {
   noindex?: boolean;
 }
 
-export type PageKey = 'home' | 'about' | 'services' | 'team' | 'eyeHealth' | 'contact' | 'privacy' | 'notFound';
+export type PageKey = 'home' | 'about' | 'services' | 'team' | 'eyeHealth' | 'contact' | 'notFound';
 
 /** " in Columbia, SC" once an address is configured; empty until then. */
 const inCity = (): string => {
@@ -57,11 +57,6 @@ export const pageMeta: Record<PageKey, PageMeta> = {
     description: `Find ${name}’s location, phone number, office hours, and directions${inCity()}, or schedule an eye exam through our secure online scheduling portal.`,
     structuredData: true,
   },
-  privacy: {
-    path: '/privacy',
-    title: `Website Privacy Notice | ${name}`,
-    description: `How the ${name} website handles information, and how appointment scheduling is handled through a separate secure system.`,
-  },
   notFound: {
     path: '/404',
     title: `Page Not Found | ${name}`,
@@ -71,7 +66,7 @@ export const pageMeta: Record<PageKey, PageMeta> = {
 };
 
 /** Routes that are prerendered to static HTML at build time. */
-export const prerenderRoutes: PageKey[] = ['home', 'about', 'services', 'team', 'eyeHealth', 'contact', 'privacy'];
+export const prerenderRoutes: PageKey[] = ['home', 'about', 'services', 'team', 'eyeHealth', 'contact'];
 
 export function metaForPath(pathname: string): PageMeta {
   const clean = pathname.replace(/\/+$/, '') || '/';

@@ -5,7 +5,6 @@ import { ContactPage } from './pages/ContactPage';
 import { EyeHealthPage } from './pages/EyeHealthPage';
 import { HomePage } from './pages/HomePage';
 import { NotFoundPage } from './pages/NotFoundPage';
-import { PrivacyPage } from './pages/PrivacyPage';
 import { ServicesPage } from './pages/ServicesPage';
 import { TeamPage } from './pages/TeamPage';
 import { pageMeta } from './seo/pages';
@@ -20,7 +19,6 @@ export function App() {
         <Route path={pageMeta.team.path} element={<TeamPage />} />
         <Route path={pageMeta.eyeHealth.path} element={<EyeHealthPage />} />
         <Route path={pageMeta.contact.path} element={<ContactPage />} />
-        <Route path={pageMeta.privacy.path} element={<PrivacyPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>

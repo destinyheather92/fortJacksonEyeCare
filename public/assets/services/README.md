@@ -1,7 +1,7 @@
 # Service photos
 
 Landscape **4:3** (export at **1200×900**). These are currently stock photos; replace them with real
-Fort Jackson Eye Care photos whenever they become available.
+Fort Jackson Eye Center photos whenever they become available.
 
 | File | Used for | Source |
 |---|---|---|

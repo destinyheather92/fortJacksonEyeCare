@@ -12,5 +12,3 @@ export const mainNav: NavItem[] = [
   { label: 'Eye Health', to: '/eye-health' },
   { label: 'Contact', to: '/contact' },
 ];
-
-export const legalNav: NavItem[] = [{ label: 'Website Privacy Notice', to: '/privacy' }];

@@ -63,7 +63,7 @@ export const services: Service[] = [
     icon: 'family',
     summary: 'Comprehensive eye care for every stage of life, from infants to senior adults.',
     details: [
-      'Fort Jackson Eye Care provides comprehensive eye care for patients ranging from infants through senior adults, so everyone in the family can be seen by the same provider who knows their history.',
+      'Fort Jackson Eye Center provides comprehensive eye care for patients ranging from infants through senior adults, so everyone in the family can be seen by the same provider who knows their history.',
       'Eyes and vision change throughout life. Regular exams help keep track of those changes. If you have questions about when to schedule a visit for your child, please contact our office.',
     ],
     image: 'serviceFamily',
@@ -100,7 +100,7 @@ export const services: Service[] = [
     icon: 'car',
     summary: 'Vision examinations related to DMV vision requirements for your driver’s license.',
     details: [
-      'Drivers are sometimes asked to complete a vision examination as part of a license application or renewal. Fort Jackson Eye Care offers vision examinations related to DMV vision requirements.',
+      'Drivers are sometimes asked to complete a vision examination as part of a license application or renewal. Fort Jackson Eye Center offers vision examinations related to DMV vision requirements.',
       'If the DMV has given you a form, bring it to your appointment so it can be reviewed during your visit.',
     ],
     note: 'Licensing decisions are made by the DMV. Completing an eye examination does not guarantee license approval.',

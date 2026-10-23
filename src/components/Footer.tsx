@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { practice } from '../config/practice';
-import { legalNav, mainNav } from '../data/navigation';
+import { mainNav } from '../data/navigation';
 import { Icon } from './Icon';
 import { Logo } from './Logo';
 import { OfficeDetails } from './OfficeDetails';
@@ -76,13 +76,6 @@ export function Footer() {
           <p>
             © {year} {practice.name}. All rights reserved.
           </p>
-          <ul>
-            {legalNav.map((item) => (
-              <li key={item.to}>
-                <Link to={item.to}>{item.label}</Link>
-              </li>
-            ))}
-          </ul>
         </div>
       </div>
     </footer>

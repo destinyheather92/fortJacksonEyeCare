@@ -1,6 +1,6 @@
-# Fort Jackson Eye Care website
+# Fort Jackson Eye Center website
 
-A multi-page marketing website for Fort Jackson Eye Care, built with React, TypeScript, and Vite.
+A multi-page marketing website for Fort Jackson Eye Center, built with React, TypeScript, and Vite.
 Every page is prerendered to static HTML at build time, with its own title, meta description, and
 content, so it loads fast, is search-engine friendly, and can be hosted on any static web host.
 
@@ -33,7 +33,6 @@ All office details live in **one file**: [`src/config/practice.ts`](src/config/p
 | `siteUrl` | Final domain. Enables canonical URLs and Open Graph link previews. |
 | `social` | Social media links in the footer |
 | `contactFormEndpoint` | Leave `null` unless the practice approves a form service. While it's null, the Contact page shows contact details instead of a form. |
-| `noticeOfPrivacyPracticesUrl` | Linked from the Website Privacy Notice page |
 
 Missing values appear on the site as labeled **"To be added"** placeholders. Never replace them with
 guessed information.
@@ -83,7 +82,7 @@ src/
   data/       services, team, eye health topics, navigation
   seo/        page titles/descriptions, meta tags, structured data
   components/ Header, Footer, ScheduleButton, ImageSlot, TeamMemberCard, …
-  pages/      Home, About, Services, Meet the Team, Eye Health, Contact, Privacy, 404
+  pages/      Home, About, Services, Meet the Team, Eye Health, Contact, 404
   styles/     tokens.css (colors, type, spacing), base, layout, components, pages
 scripts/
   prerender.mjs        writes static HTML for each page after the build
@@ -101,11 +100,12 @@ public/assets/         web-ready images served by the site
   background replacement or facial changes). Replace it with a higher-resolution professional headshot.
 - The site includes no testimonials, reviews, ratings, statistics, awards, or pricing. Insurance shows the
   practice's statement and the plans it confirmed, plus a note to verify benefits; coverage is never promised.
-- The practice name is "Fort Jackson Eye Care". The practice has no logo, so the header and footer show
+- The practice name is "Fort Jackson Eye Center" (confirmed; some client materials said "Eye Care").
+  The practice has no logo, so the header and footer show
   only the text wordmark (`src/components/Logo.tsx`). Do not create a logo unless the practice provides one.
 - The Services, About, and Eye Health pages use stock photos from Pexels (free for commercial use); see
   `public/assets/services/README.md` and `public/assets/general/README.md`. Replace them with real practice
   photos when available.
 - The site does not claim to be "HIPAA compliant."
-- Have the practice review the Website Privacy Notice (`src/pages/PrivacyPage.tsx`) and set its effective
-  date before launch.
+- There is no website privacy page (removed at the practice's request). If a contact form, analytics, or
+  the practice's Notice of Privacy Practices is added later, add a page or footer link for it.

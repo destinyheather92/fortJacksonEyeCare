@@ -13,7 +13,7 @@ export function Logo({ tone = 'dark', onClick }: LogoProps) {
     <Link to="/" className={`logo logo--${tone}`} onClick={onClick} aria-label={`${practice.name}, home`}>
       <span className="logo__text" aria-hidden="true">
         <span className="logo__name">Fort Jackson</span>
-        <span className="logo__sub">Eye Care</span>
+        <span className="logo__sub">Eye Center</span>
       </span>
     </Link>
   );

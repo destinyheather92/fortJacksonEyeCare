@@ -34,7 +34,7 @@ export const images = {
   homeHero: image({
     // Uses the exam room photo. To use a different hero, change the path (e.g. /assets/general/home-hero.jpg).
     path: '/assets/office/exam-room.jpg',
-    alt: 'Exam room at Fort Jackson Eye Care with an exam chair, phoropter, and slit lamp',
+    alt: 'Exam room at Fort Jackson Eye Center with an exam chair, phoropter, and slit lamp',
     width: 1600,
     height: 1200,
     ready: true,
@@ -51,7 +51,7 @@ export const images = {
   }),
   ogShare: image({
     path: '/assets/general/social-share.jpg',
-    alt: 'Fort Jackson Eye Care',
+    alt: 'Fort Jackson Eye Center',
     width: 1200,
     height: 630,
     ready: false,
@@ -61,7 +61,7 @@ export const images = {
   /* ── /assets/office  (generated from asset-originals/ by `npm run images`) ── */
   officeInterior: image({
     path: '/assets/office/waiting-area.jpg',
-    alt: 'Waiting area at Fort Jackson Eye Care with seating and framed diplomas on the wall',
+    alt: 'Waiting area at Fort Jackson Eye Center with seating and framed diplomas on the wall',
     width: 1600,
     height: 1200,
     ready: true,
@@ -69,7 +69,7 @@ export const images = {
   }),
   examRoom2: image({
     path: '/assets/office/exam-room-2.jpg',
-    alt: 'Exam room at Fort Jackson Eye Care with eye exam equipment and a poster of eye anatomy',
+    alt: 'Exam room at Fort Jackson Eye Center with eye exam equipment and a poster of eye anatomy',
     width: 1200,
     height: 1600,
     ready: true,
@@ -123,7 +123,7 @@ export const images = {
     // Generated from asset-originals/team/doctor.jpg by `npm run images`. The supplied photo is only
     // 226×325, so this is a 2× upscale. TODO: Replace with a higher-resolution professional headshot.
     path: '/assets/team/doctor.jpg',
-    alt: 'Dr. Andrew Hardison, Fort Jackson Eye Care',
+    alt: 'Dr. Andrew Hardison, Fort Jackson Eye Center',
     width: 452,
     height: 565,
     ready: true,
@@ -132,7 +132,7 @@ export const images = {
   kashiaDoyle: image({
     // Generated from asset-originals/team/doyle.jpg by `npm run images`.
     path: '/assets/team/doyle.jpg',
-    alt: 'Kashia Doyle, Office Manager at Fort Jackson Eye Care',
+    alt: 'Kashia Doyle, Office Manager at Fort Jackson Eye Center',
     width: 1200,
     height: 1500,
     ready: true,
@@ -141,7 +141,7 @@ export const images = {
   alysia: image({
     // Neutral placeholder until Alysia's photo is provided. Then save it as /assets/team/alysia.jpg
     // (4:5 portrait, 1200×1500), update this path, and change the alt text to
-    // 'Alysia, Optometry Assistant/Technician at Fort Jackson Eye Care'.
+    // 'Alysia, Optometry Assistant/Technician at Fort Jackson Eye Center'.
     path: '/assets/team/photo-coming-soon.svg',
     alt: 'Photo of Alysia coming soon',
     width: 1200,

@@ -114,7 +114,7 @@ export function EyeHealthPage() {
 
       <CtaBand
         heading="Take the Next Step for Your Eye Health"
-        text="Schedule a comprehensive eye examination at Fort Jackson Eye Care."
+        text="Schedule a comprehensive eye examination at Fort Jackson Eye Center."
       />
     </>
   );

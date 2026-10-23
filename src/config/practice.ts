@@ -78,12 +78,10 @@ export interface PracticeConfig {
    * so the site never pretends a message was sent.
    */
   contactFormEndpoint: string | null;
-  /** Link to the practice's Notice of Privacy Practices, if published online. */
-  noticeOfPrivacyPracticesUrl: string | null;
 }
 
 export const practice: PracticeConfig = {
-  name: 'Fort Jackson Eye Care',
+  name: 'Fort Jackson Eye Center',
   foundedYear: 2025,
 
   // Confirmed by the practice ("Rd", matching Google Maps).
@@ -138,9 +136,6 @@ export const practice: PracticeConfig = {
 
   // TODO: Only set once the practice approves a form service.
   contactFormEndpoint: null,
-
-  // TODO: Link to the Notice of Privacy Practices if one is published online.
-  noticeOfPrivacyPracticesUrl: null,
 };
 
 /* ───────────────────────────── Helpers ───────────────────────────── */
