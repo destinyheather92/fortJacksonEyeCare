@@ -32,6 +32,9 @@ const sources = [
   // TODO: Replace with a higher-resolution headshot when available; the background still needs professional editing.
   { from: 'team/doctor.jpg', to: 'assets/team/doctor.jpg', width: 452, height: 565, position: 'north', retouch: true, quality: 88 },
   { from: 'team/doyle.jpg', to: 'assets/team/doyle.jpg', width: 1200, height: 1500 },
+  { from: 'team/alysia.jpeg', to: 'assets/team/alysia.jpeg', width: 1200, height: 1500 },
+  // Head sits at the top edge of the original, so crop from the top to keep it.
+  { from: 'team/ashley.jpg', to: 'assets/team/ashley.jpg', width: 1200, height: 1500, position: 'north' },
 
   // Stock photos from Pexels (free for commercial use, no attribution required). Sources: public/assets/services/README.md
   { from: 'stock/pexels-6749708-eye-exam-slit-lamp.jpg', to: 'assets/services/comprehensive-eye-exam.jpg', width: 1200, height: 900 },

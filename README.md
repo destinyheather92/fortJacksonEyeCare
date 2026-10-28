@@ -94,8 +94,8 @@ public/assets/         web-ready images served by the site
 ## Content notes
 
 - Dr. Hardison's biography is used exactly as provided. His credentials ("OD, MPH") were confirmed by him.
-- Staff biographies (Kashia Doyle, Alysia) are used as provided. Alysia's card uses a neutral placeholder
-  photo (`public/assets/team/photo-coming-soon.svg`) until her photo is supplied.
+- Staff biographies (Kashia Doyle, Alysia) are used as provided. Ashley's was lightly edited for grammar and
+  readability at the practice's request. Ashley has no job title on the site until the practice confirms one.
 - Dr. Hardison's photo was supplied at only 226×325, so it has been upscaled and lightly retouched (no
   background replacement or facial changes). Replace it with a higher-resolution professional headshot.
 - The site includes no testimonials, reviews, ratings, statistics, awards, or pricing. Insurance shows the

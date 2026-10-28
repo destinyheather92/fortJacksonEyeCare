@@ -83,4 +83,17 @@ export const teamMembers: TeamMember[] = [
     intro:
       'I’m Alysia, a proud mom and military wife who loves spending time with my family and enjoying the simple things in life. I’m a Wisconsin girl who loves the ocean, plants, iced coffee, and a good Dr Pepper. I enjoy cozy clothes, Southern living, and making memories with my two girls. Family, love, and finding joy in the little things are what mean the most to me.',
   },
+  {
+    // Biography lightly edited for grammar and readability; details are as provided.
+    id: 'ashley',
+    name: 'Ashley',
+    credentials: null,
+    photo: 'ashley',
+    intro:
+      'Hi, my name is Ashley! I was born in Colorado, have also lived in Maryland, and have spent much of my life traveling. The military has always been a big part of my family: my dad and brother are both military veterans, and I’m currently a military spouse. My husband has served in the Army for 20 years.',
+    bio: [
+      'I’m a proud mom of five: two stepsons and three daughters. Our household also includes two dogs, three cats, and some fish, so there’s never a dull moment!',
+      'Outside of work, I love spending time with my family and friends, gardening, reading, and listening to music. Life is always busy, but I wouldn’t have it any other way!',
+    ],
+  },
 ];

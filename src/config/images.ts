@@ -139,11 +139,18 @@ export const images = {
     brief: 'Staff headshot, 4:5 portrait',
   }),
   alysia: image({
-    // Neutral placeholder until Alysia's photo is provided. Then save it as /assets/team/alysia.jpg
-    // (4:5 portrait, 1200×1500), update this path, and change the alt text to
-    // 'Alysia, Optometry Assistant/Technician at Fort Jackson Eye Center'.
-    path: '/assets/team/photo-coming-soon.svg',
-    alt: 'Photo of Alysia coming soon',
+    // Generated from asset-originals/team/alysia.jpeg by `npm run images`.
+    path: '/assets/team/alysia.jpeg',
+    alt: 'Alysia, Optometry Assistant/Technician at Fort Jackson Eye Center',
+    width: 1200,
+    height: 1500,
+    ready: true,
+    brief: 'Staff headshot, 4:5 portrait',
+  }),
+  ashley: image({
+    // Generated from asset-originals/team/ashley.jpg by `npm run images`.
+    path: '/assets/team/ashley.jpg',
+    alt: 'Ashley, Fort Jackson Eye Center',
     width: 1200,
     height: 1500,
     ready: true,
